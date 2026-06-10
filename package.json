@@ -1,7 +1,7 @@
 {
   "name": "trial_test",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,9 +12,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "@types/node": "^25.9.2",
     "bullmq": "^5.78.0",
+    "joi": "^18.2.1",
     "pg": "^8.21.0",
     "prisma": "^7.8.0",
     "typescript": "^6.0.3"

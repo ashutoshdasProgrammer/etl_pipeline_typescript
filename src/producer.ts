@@ -1,3 +1,12 @@
+
+/**
+ * - Queue is created here
+ * - connected with extractCSVData
+ * - pushing jobs to the queue
+ * - close queue after pushing all jobs
+ * 
+ */
+
 import { Queue } from 'bullmq';
 import { extractCSVData } from './extract/data.extract.code.js';
 

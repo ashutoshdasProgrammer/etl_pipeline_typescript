@@ -1,4 +1,5 @@
 /**
+ * - took the access from the queue named ETL_QUEUE
  * - build a background processing worker
  * - continiously listens to redis
  * - pulls jobs out
