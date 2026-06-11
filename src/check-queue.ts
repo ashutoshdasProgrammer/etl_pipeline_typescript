@@ -10,7 +10,7 @@ const queue = new Queue('ETL_QUEUE', {
 async function main() {
   const jobs = await queue.getJobs(['failed', 'completed', 'waiting', 'active']);
   console.log(`Total jobs: ${jobs.length}`);
-  const failed = jobs.filter(j => j.failedReason);
+  const failed = jobs.filter((j) => j.failedReason);
   console.log(`Failed jobs: ${failed.length}`);
   if (failed.length > 0) {
     console.log('Sample failed job error:', failed[0].failedReason);
